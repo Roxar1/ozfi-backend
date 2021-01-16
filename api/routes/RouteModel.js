@@ -34,6 +34,10 @@ router.route('/all').get((req, res) => {
   });
 });
 
+router.route('/allstates').get((req, res) => {
+  res.json("data");
+});
+
 router.route('/search').post((req, res) => {
   // get all map data
   db.testDB
